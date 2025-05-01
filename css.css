@@ -3,7 +3,7 @@
     border: 2px solid black; /* Adjust thickness and color as needed */
     padding: 20px; /* Add padding inside the border */
     margin: 0; /* Remove default body margins */
-    background-image: linear-gradient(white, blue)
+    background-image: linear-gradient(blue, white)
     
   }
   img {
