@@ -3,54 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunrise & Sunset Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <script async src="java.js"></script>
+    <title>Sunrise and Sunset Dashboard</title>
+    
 </head>
 <body>
     <div class="container">
-        <h1>Sunrise & Sunset Dashboard</h1>
+        <h1>Sunrise and Sunset Dashboard</h1>
         <div class="search-bar">
             <label for="location">Select Location:</label>
             <select id="location">
-                <option value="">Select Location</option>
-                <option value="New York">New York</option>
-                <option value="London">London</option>
-                <option value="Tokyo">Tokyo</option>
-                <option value="Sydney">Sydney</option>
-                <option value="Paris">Paris</option>
-                <option value="Berlin">Berlin</option>
-                <option value="Rome">Rome</option>
-                <option value="Moscow">Moscow</option>
-                <option value="Cairo">Cairo</option>
+                <option value="">Select a location</option>
+                <option value="New York, NY">New York, NY</option>
+                <option value="Los Angeles, CA">Los Angeles, CA</option>
+                <option value="Chicago, IL">Chicago, IL</option>
+                <option value="Houston, TX">Houston, TX</option>
+                <option value="Philadelphia, PA">Philadelphia, PA</option>
+                <option value="Phoenix, AZ">Phoenix, AZ</option>
+                <option value="San Antonio, TX">San Antonio, TX</option>
+                <option value="San Diego, CA">San Diego, CA</option>
+                <option value="Dallas, TX">Dallas, TX</option>
+                <option value="San Jose, CA">San Jose, CA</option>
             </select>
-            <button id="search-btn">Search</button>
+            <button id="search-button">Search</button>
         </div>
         <div class="results">
-            <div class="today">
-                <h2>Today</h2>
-                <div class="data">
-                    <div class="sunrise">Sunrise: <span id="today-sunrise"></span></div>
-                    <div class="sunset">Sunset: <span id="today-sunset"></span></div>
-                    <div class="dawn">Dawn: <span id="today-dawn"></span></div>
-                    <div class="dusk">Dusk: <span id="today-dusk"></span></div>
-                    <div class="day-length">Day Length: <span id="today-day-length"></span></div>
-                    <div class="solar-noon">Solar Noon: <span id="today-solar-noon"></span></div>
-                    <div class="timezone">Timezone: <span id="today-timezone"></span></div>
+            <h2>Today's Data</h2>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="sunrise-today">Sunrise:</label>
+                    <span id="sunrise-today"></span>
+                </div>
+                <div class="data-item">
+                    <label for="sunset-today">Sunset:</label>
+                    <span id="sunset-today"></span>
                 </div>
             </div>
-            <div class="tomorrow">
-                <h2>Tomorrow</h2>
-                <div class="data">
-                    <div class="sunrise">Sunrise: <span id="tomorrow-sunrise"></span></div>
-                    <div class="sunset">Sunset: <span id="tomorrow-sunset"></span></div>
-                    <div class="dawn">Dawn: <span id="tomorrow-dawn"></span></div>
-                    <div class="dusk">Dusk: <span id="tomorrow-dusk"></span></div>
-                    <div class="day-length">Day Length: <span id="tomorrow-day-length"></span></div>
-                    <div class="solar-noon">Solar Noon: <span id="tomorrow-solar-noon"></span></div>
-                    <div class="timezone">Timezone: <span id="tomorrow-timezone"></span></div>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="dawn-today">Dawn:</label>
+                    <span id="dawn-today"></span>
+                </div>
+                <div class="data-item">
+                    <label for="dusk-today">Dusk:</label>
+                    <span id="dusk-today"></span>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="day-length-today">Day Length:</label>
+                    <span id="day-length-today"></span>
+                </div>
+                <div class="data-item">
+                    <label for="solar-noon-today">Solar Noon:</label>
+                    <span id="solar-noon-today"></span>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="timezone-today">Timezone:</label>
+                    <span id="timezone-today"></span>
+                </div>
+            </div>
+            <h2>Tomorrow's Data</h2>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="sunrise-tomorrow">Sunrise:</label>
+                    <span id="sunrise-tomorrow"></span>
+                </div>
+                <div class="data-item">
+                    <label for="sunset-tomorrow">Sunset:</label>
+                    <span id="sunset-tomorrow"></span>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="dawn-tomorrow">Dawn:</label>
+                    <span id="dawn-tomorrow"></span>
+                </div>
+                <div class="data-item">
+                    <label for="dusk-tomorrow">Dusk:</label>
+                    <span id="dusk-tomorrow"></span>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="day-length-tomorrow">Day Length:</label>
+                    <span id="day-length-tomorrow"></span>
+                </div>
+                <div class="data-item">
+                    <label for="solar-noon-tomorrow">Solar Noon:</label>
+                    <span id="solar-noon-tomorrow"></span>
+                </div>
+            </div>
+            <div class="data-row">
+                <div class="data-item">
+                    <label for="timezone-tomorrow">Timezone:</label>
+                    <span id="timezone-tomorrow"></span>
                 </div>
             </div>
         </div>
-        <div id="error-message"></div>
     </div>
