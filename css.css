@@ -6,7 +6,6 @@
     background-image: linear-gradient(blue, yellow)
     
   }
-  body{
-    color: white;
+  img {
+    border-radius: 8px;
   }
-  
